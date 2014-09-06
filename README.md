@@ -1,7 +1,9 @@
 sails-generate-angular-gulp
 ===========================
 
-Angular app generator for sails (gulp task &amp; basic app structure in assets) 
+Angular app generator for sails (gulp task &amp; basic app structure in assets). This should only be used to create
+new projects, for the time being, as it modifies a few standard sails files like layout.js. If you use this on a project
+already started, be sure to backup the layout.js file and your routes in routes.js.
 
 ##Install
 This should be used with my sails gulp suit of generators. remember to add .sailsrc to directory above
@@ -61,3 +63,9 @@ In  tasks/config/pipeline.js replace everything in ```jsFilesToInject = [ ``` wi
   'js/**/*.js'
 ```
 in ``` config/routes.js ``` change '/': to ``` '/': 'HomeController.index' ```
+Do a sails lift and you're ready to start coding.
+
+##Features
+- Uses $templateCache for pages in angular which means that the .tpl.html files are only used to create the templates.js
+- layout.js is automatically modified with whats needed to run angular
+- simple generator
