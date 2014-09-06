@@ -1,0 +1,41 @@
+{
+  "name": "sails-generate-angular-gulp",
+  "version": "0.0.2",
+  "description": "Add angular support for Sails when using gulp.",
+  "main": "lib/index.js",
+  "homepage": "http://github.com/karnith/sails-generate-angular-gulp",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "angular",
+    "generator",
+    "sails",
+    "generate",
+    "plugin",
+    "gulp"
+  ],
+  "author": "Karnith",
+  "license": "MIT",
+  "dependencies": {
+  	"lodash": ">=2.4.x",
+  	"merge-defaults": ">=0.1.0"
+  },
+  "devDependencies": {
+    "sails-generate": "*",
+    "reportback": "*",
+    "fs-extra": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/karnith/sails-generate-angular-gulp"
+  },
+  "bugs": {
+    "url": "https://github.com/karnith/sails-generate-angular-gulp/issues"
+  },
+  "sailsGenerator": {
+    "type": "angular",
+    "behavior": "overrides `sails generate angular`",
+    "sailsVersion": "~0.10.0"
+  }
+}

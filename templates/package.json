@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "gulp-ng-html2js": "*"
+  }
+}
