@@ -1,0 +1,42 @@
+<div ng-controller="HeaderCtrl">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                    class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">MEANS Seed Project </a>
+            <!-- {{currentUser.role}}-->
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ng-repeat="navItem in navItems">
+                    <a ng-hide="!currentUser" href="{{navItem.url}}"><i class="{{navItem.cssClass}}"></i>&nbsp; {{navItem.title}}</a>
+                </li>
+                <!-- only admin can view -->
+                <li ng-hide="currentUser.role!=4" ><a href="/users"><span class="fa fa-group fa-lg"></span>User List</a></li>
+            </ul>
+
+
+            <ul class="nav navbar-nav navbar-right">
+                <li ><a href="/about"><span class="fa fa-question"></span> About</a></li>
+                <li ng-hide="currentUser" ><a href="/login"><span class="fa fa-sign-in fa-lg"></span> Sign in</a></li>
+                <li ng-hide="currentUser"><a href="/register"><span class="fa fa-pencil fa-lg"></span> Register</a></li>
+                <li ng-if="currentUser" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    {{ __('Hello') }}
+                    <span id="currentUserMenu" class="fa fa-user">{{currentUser.first_name}} </span> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span class="fa fa-user"></span> Profile</a></li>
+                        <li><a href="#"><span class="fa fa-cogs"></span> Settings</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/logout"><span class="fa fa-sign-out"></span> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+</div>

@@ -1,0 +1,112 @@
+{
+    "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+    ],
+    "dependencies": {
+        "angular-rx-data-table": "~0.5.12",
+        "ng-table": "~0.3.3",
+        "fontawesome": "~4.2.0",
+        "jquery": "~2.1.1"
+    },
+    "devDependencies": {
+        "angular": "~1.3.0",
+        "angular-bootstrap": "~0.11.0",
+        "angular-mocks": "~1.2.23",
+        "angular-moment": "~0.8.1",
+        "angular-sails": "~1.0.4",
+        "angular-translate": "~2.2.0",
+        "angular-translate-loader-static-files": "~2.2.0",
+        "angular-ui-router": "~0.2.11",
+        "angular-ui-utils": "~0.1.1",
+        "bootstrap": "~3.2.0",
+        "lodash": "~2.4.1",
+        "socket.io-client": "~1.1.0"
+    },
+    "overrides": {
+        "angular": {
+            "main": ["./**/angular.js", "./**/*.css"]
+        },
+        "angular-animate": {
+            "main": ["./**/*.min.js", "./**/*.min.js.map"]
+        },
+        "angular-bootstrap": {
+            "main": "./**/*tpls.min.js"
+        },
+        "angular-mocks": {
+            "main": "./angular-mocks.js"
+        },
+        "angular-moment": {
+            "main": ["./**/*.min.js", "./**/*.min.js.map"]
+        },
+        "angular-route": {
+            "main": ["./**/*.min.js", "./**/*.min.js.map"]
+        },
+        "angular-rx-data-table": {
+            "main": ["./dist/**/*table.js", "./dist/**/*.min.css"]
+        },
+        "angular-sails": {
+            "main": "./dist/**/*.min.js"
+        },
+        "angular-sanitize": {
+            "main": ["./**/*.min.js", "./**/*.min.js.map"]
+        },
+        "angular-translate": {
+            "main": "./**/*.min.js"
+        },
+        "angular-translate-loader-static-files": {
+            "main": "./**/*.min.js"
+        },
+        "angular-ui-router": {
+            "main": "./release/**/*.min.js"
+        },
+        "angular-ui-utils": {
+            "main": "./**/*.min.js"
+        },
+        "angular-xeditable": {
+            "main": ["./dist/**/*.min.js", "./dist/**/*.css"]
+        },
+        "bootstrap": {
+            "main": [
+                "./dist/**/*.min.js",
+                "./dist/**/*min.css",
+                "./dist/**/*.css.map",
+                "./fonts/*"
+            ]
+        },
+        "bootstrapValidator": {
+            "main": ["./dist/**/*.min.js", "./dist/**/*min.css"]
+        },
+        "es5-shim": {
+            "main": ["./**/*.min.js", "./**/*.map"]
+        },
+        "fontawesome": {
+            "main": ["./css/**/*min.css", "./fonts/*"]
+        },
+        "jquery": {
+            "main": ["./dist/*.min.js", "./dist/*.min.map"]
+        },
+        "json3": {
+            "main": "./**/*.min.js"
+        },
+        "lodash": {
+            "main": "./**/*.min.js"
+        },
+        "moment": {
+            "main": "./**/*-locales.min.js"
+        },
+        "ng-table-extend": {
+            "main": ["./**/*.min.js", "./**/*.min.css", "./**/*.map"]
+        },
+        "socket.io-client": {
+            "main": ["./socket.io.js"]
+        }
+    },
+    "resolutions": {
+        "angular": "~1.3.0",
+        "bootstrap": "~3.2.0"
+    }
+}
