@@ -9,7 +9,12 @@ already started, be sure to backup the layout.js file and your routes in routes.
 This should be used with my sails gulp suit of generators. remember to add .sailsrc to directory above
 where the project will be created. See my other generators for details.
 ```sh
-npm install -g sails-generate-angular-gulp
+$ npm install -g sails-generate-backend-gulp
+$ npm install -g sails-generate-gulpfile
+$ npm install -g sails-generate-frontend-gulp
+$ npm install -g sails-generate-new-gulp
+$ npm install -g sails-generate-bower-gulp
+$ npm install -g sails-generate-angular-gulp
 sails new <project name here>
 ```
 add this to .sailsrc of project after it is created:
