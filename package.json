@@ -1,10 +1,6 @@
 {
   "name": "sails-generate-angular-gulp",
-<<<<<<< HEAD
-  "version": "0.0.4",
-=======
   "version": "0.0.5",
->>>>>>> origin/master
   "description": "Add angular support for Sails when using gulp.",
   "main": "lib/index.js",
   "homepage": "http://github.com/karnith/sails-generate-angular-gulp",
