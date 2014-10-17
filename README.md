@@ -17,21 +17,16 @@ $ npm install -g sails-generate-bower-gulp
 $ npm install -g sails-generate-angular-gulp
 sails new <project name here>
 ```
-add this to .sailsrc of project after it is created:
+##Framework Change
+By default the sails angular generator with web server is added to the .sailsrc file.
+If you would like to use the standard sails angular generator that is integrated with sails routes, controllers, etc
+change the .sailsrc file for angular to
+
 ```sh
-{
-  "hooks": {
-      "grunt": false
-  },
-  "generators": {
-    "modules": {
-		"bower": "sails-generate-bower-gulp",
-		"auth": "sails-generate-auth",
-		"angular": "sails-generate-angular-gulp"
-	}
-  }
-}
+'sails-generator-angular-gulp'
 ```
+by switching out the -gws with -gulp before doing a sails generate angular.
+
 next
 ```sh
 sails generate bower
