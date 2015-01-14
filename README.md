@@ -1,6 +1,8 @@
 sails-generate-angular-gulp
 ===========================
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Karnith/sails-generate-angular-gulp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Angular app generator for sails (gulp task &amp; basic app structure in assets). This should only be used to create
 new projects, for the time being, as it modifies a few standard sails files like layout.js. If you use this on a project
 already started, be sure to backup the layout.js file and your routes in routes.js.
